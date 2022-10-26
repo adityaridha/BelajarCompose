@@ -12,3 +12,13 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+task helloNK() {
+    description "Custom Task Demo"
+    doLast {
+        println "Hello 4NK"
+        // upload APK
+        var test = 5;
+        println test
+    }
+}
