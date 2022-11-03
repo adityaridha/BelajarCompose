@@ -57,7 +57,7 @@ fun DiceApp() {
         )
         Button(
             onClick = {
-                diceValue = (listOf<Int>(1,6)).random()
+                diceValue = (1..6).random()
             },
             content = {
                 Text(text = "Roll")

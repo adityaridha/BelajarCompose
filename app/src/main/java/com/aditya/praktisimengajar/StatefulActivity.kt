@@ -13,10 +13,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-class StatefulActivity: ComponentActivity() {
+class StatefulActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent{
+        setContent {
             EchoText()
         }
     }
@@ -44,13 +44,15 @@ fun EchoText() {
         }
 
         Spacer(modifier = Modifier.height(24.dp))
-        
+
         OutlinedTextField(
             value = displayedText,
             onValueChange = {
                 displayedText = it
             },
-            label = { Text(text = "Nama")}
+            label = {
+                Text(text = "Nama")
+            }
         )
     }
 }
